@@ -685,12 +685,12 @@ body {
 
 /* line 17, ../sass/styles.scss */
 .name.ng-dirty.ng-invalid-required {
-  background-color: red;
+  color: #a04e4e;
 }
 
 /* line 20, ../sass/styles.scss */
 .name.ng-dirty.ng-invalid-minlength {
-  background: lightpink;
+  color: #916f30;
 }
 
 /* line 29, ../sass/styles.scss */

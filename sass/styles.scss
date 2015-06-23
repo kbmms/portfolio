@@ -15,10 +15,10 @@ body {
     background: green;
   }
   .name.ng-dirty.ng-invalid-required {
-    background-color:red;
+      color: rgb(160, 78, 78);
   }
   .name.ng-dirty.ng-invalid-minlength {
-    background:lightpink;
+      color: rgb(145, 111, 48);
   }
 
 #container-principal  .col-md-3{
