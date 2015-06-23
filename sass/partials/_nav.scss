@@ -1,0 +1,62 @@
+.navbar-default {
+
+
+}
+
+.navbar {
+	border-radius:0;
+}
+
+.navbar-default {
+   border-color: #2A2626;
+  padding: 23px;
+  margin: 0;
+  background-color: rgba(58, 55, 55, 1);
+  box-shadow: 0px 8px 21px #000000;
+
+  @include sombra-box;
+}
+.navbar-default .navbar-brand {
+  font-family: "Dosis", sans-serif;
+  color: #006E8E;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-size: 18px;
+  color: #FFCB00;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: yellow;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #0B0707;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #23220B;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #0B0B0B;
+}
+
+
+/*Bordas Não aparecerem na versão desktop*/
+@media screen and (max-width: 767px){
+.nav>li {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #0B0707;
+  border-top: 1px solid #343434;
+}
+.nav>li:first-child {
+	border-top:0;
+}
+.nav>li:last-child {
+	border-bottom: 0;
+}
+}
