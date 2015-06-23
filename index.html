@@ -36,9 +36,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="#">Sobre <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+        <li class=""><a href="#sobre" class="ir-contato-scroll">Sobre <span class="sr-only">(current)</span></a></li>
+        <li><a href="#portfolio" class="ir-portfolio-scroll">Portfólio</a></li>
+        <li><a href="#contato" class="ir-contato-scroll">Contato</a></li>
         <li><a href="#">Blog</a></li>
 
       </ul>
@@ -86,7 +86,7 @@ Através do meu portfólio você verá alguns trabalhos feitos por mim. See You!
 
 <div class="container-fluid portfolio">
   <div class="container">
-    <div class="row" id="">
+    <div class="row" id="portfolio">
           <p><span>Portfólio</span></p>
       <div class="col-md-3 col-sm-6  col-xs-12 portfolio-box">
           <div class="hover-box-portfolio">
@@ -122,7 +122,7 @@ Através do meu portfólio você verá alguns trabalhos feitos por mim. See You!
 </div>
 
 <div class="container-fluid contato">
-  <div class="container">
+  <div class="container" id="contato">
     <div class="row" id="contato-form">
     <p><span>Contato</span></p>
 
@@ -192,6 +192,22 @@ Através do meu portfólio você verá alguns trabalhos feitos por mim. See You!
   ga('create', 'UA-64404970-1', 'auto');
   ga('send', 'pageview');
 
+    function scrollNav2() {
+$('.ir-sobre-scroll , .ir-portfolio-scroll , .ir-contato-scroll').click(function(){
+$('html, body').stop().animate({
+scrollTop: $( $(this).attr('href') ).offset().top - 0
+}, 1200);
+return false;
+});
+$('.navbar-collapse a').scrollTop();
+}
+scrollNav2();
 </script>
+ <!-- Load ScrollTo -->
+    <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+    <!-- Load LocalScroll -->
+  <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
   </body>
 </html>
