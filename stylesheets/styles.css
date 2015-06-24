@@ -683,32 +683,32 @@ body {
   background: green;
 }
 
-/* line 17, ../sass/styles.scss */
+/* line 18, ../sass/styles.scss */
 .name.ng-dirty.ng-invalid-required {
   color: #a04e4e;
 }
 
-/* line 20, ../sass/styles.scss */
+/* line 21, ../sass/styles.scss */
 .name.ng-dirty.ng-invalid-minlength {
   color: #916f30;
 }
 
-/* line 29, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 .icone-valido {
   color: green;
 }
 
-/* line 32, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 .icone-invalido {
   color: #a04e4e;
 }
 
-/* line 35, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .icone-min {
   color: #916f30;
 }
 
-/* line 38, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 .prox-jogo p {
   font-family: "Dosis";
   color: #fff;
@@ -718,7 +718,7 @@ body {
   border: 1px solid #181717;
 }
 
-/* line 46, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
 .prox-jogo p:last-child {
   font-family: "Dosis";
   color: #F7F7F7;
@@ -727,25 +727,30 @@ body {
   text-shadow: 1px 1px 1px #000;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 .prox-jg-container {
   background-color: #474040;
   padding-top: 21px;
   /*  padding-bottom: 21px; */
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 .prox-jg-container a i {
   font-size: 39px;
   color: #272727;
 }
 
-/* line 64, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .prox-jg-container a i:hover {
   color: #FFCB00;
+  transition: color 1s linear;
+  -webkit-transition: color 1s linear;
+  -moz-transition: color 1s linear;
+  -o-transition: color 1s linear;
+  -ms-transition: color 1s linear;
 }
 
-/* line 71, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 #sobre span {
   font-size: 69px;
   color: #fff;
@@ -760,7 +765,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 #sobre p:last-child {
   color: #FFFFFF;
   padding: 10px;
@@ -769,18 +774,18 @@ body {
   font-family: "Dosis", verdana;
 }
 
-/* line 83, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 .sobre-mim {
   background-color: #ffcb00;
 }
 
-/* line 86, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 .portfolio {
   background-color: #F7EAEA;
   background-image: url(../images/ravenna.png);
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .portfolio p span {
   font-size: 69px;
   color: #fff;
@@ -795,7 +800,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .portfolio-box {
   height: 200px;
   padding-right: 0;
@@ -806,40 +811,53 @@ body {
   overflow: hidden;
   border: none;
 }
-/* line 99, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .portfolio-box img {
   width: 100%;
   height: 200px;
 }
-/* line 106, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .portfolio-box .hover-box-portfolio {
   display: block;
   position: absolute;
   text-align: center;
   height: 100%;
-  background-color: #181212;
-  width: 100%;
+  background-color: #FFCB00;
+  width: 0%;
   opacity: 0;
+  color: #fff;
 }
-/* line 115, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 .portfolio-box .hover-box-portfolio img {
   width: 40px;
   height: 40px;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .portfolio-box:hover .hover-box-portfolio {
   opacity: .9;
+  /* -webkit-transition: opacity 1s ease-in;
+  -o-transition: opacity 0.4s ease-in;
+  -ms-transition: opacity 0.4s ease-in;
+  -moz-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in; */
+  width: 100%;
+  transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -webkit-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -moz-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -o-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -ms-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
 }
 
 @media screen and (min-width: 992px) {
-  /* line 128, ../sass/styles.scss */
+  /* line 150, ../sass/styles.scss */
   .portfolio-box {
     margin: 2%;
   }
-  /* line 131, ../sass/styles.scss */
+  /* line 153, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
-    color: #fff;
+    color: #000;
+    font-weight: bolder;
     display: block;
     top: 50%;
     padding-top: 30%;
@@ -850,13 +868,14 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 146, ../sass/styles.scss */
+  /* line 169, ../sass/styles.scss */
   .portfolio-box {
     margin: 2%;
   }
-  /* line 149, ../sass/styles.scss */
+  /* line 172, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
-    color: #fff;
+    color: #000;
+    font-weight: bolder;
     display: block;
     top: 50%;
     padding-top: 20%;
@@ -867,13 +886,14 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 166, ../sass/styles.scss */
+  /* line 188, ../sass/styles.scss */
   .portfolio-box {
     margin-bottom: 10px;
   }
-  /* line 169, ../sass/styles.scss */
+  /* line 191, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
-    color: #fff;
+    color: #000;
+    font-weight: bolder;
     display: block;
     top: 55%;
     padding-top: 15%;
@@ -883,13 +903,12 @@ body {
     font-size: 19px;
   }
 }
-/* line 183, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 .portfolio-box:hover, .hover-box-portfolio:hover, .hover-box-portfolio img:hover {
   border: none;
-  border-radius: 9px;
 }
 
-/* line 188, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 #contato-form span {
   font-size: 69px;
   color: #fff;
@@ -904,7 +923,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .contato-nome, .contato-email, .contato-mensagem {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -919,7 +938,7 @@ body {
   -o-box-shadow: 0px 0px 1px #615E5E;
   -ms-box-shadow: 0px 0px 1px #615E5E;
 }
-/* line 208, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .contato-nome input, .contato-email input, .contato-mensagem input {
   border: none;
   width: 80%;
@@ -931,7 +950,7 @@ body {
   font-size: 18px;
   padding-left: 7%;
 }
-/* line 221, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .contato-nome textarea, .contato-email textarea, .contato-mensagem textarea {
   border: none;
   width: 80%;
@@ -945,29 +964,29 @@ body {
   resize: none;
 }
 
-/* line 234, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
 .contato-nome input:focus, .contato-email input:focus, .contato-mensagem textarea:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
 }
 
-/* line 240, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .contato-mensagem textarea {
   height: 200px;
 }
 
-/* line 244, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 .contato-nome i, .contato-email i, .contato-mensagem i {
   font-size: 20px;
 }
 
-/* line 248, ../sass/styles.scss */
+/* line 272, ../sass/styles.scss */
 .bt-enviar {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 252, ../sass/styles.scss */
+/* line 276, ../sass/styles.scss */
 .bt-enviar button {
   background-color: #006e8e;
   /* border: none; */
@@ -978,12 +997,12 @@ body {
   border: 2px solid #545556;
 }
 
-/* line 262, ../sass/styles.scss */
+/* line 286, ../sass/styles.scss */
 input:required, textarea:required {
   box-shadow: none;
 }
 
-/* line 265, ../sass/styles.scss */
+/* line 289, ../sass/styles.scss */
 input:invalid, textarea:invalid {
   box-shadow: 0;
 }

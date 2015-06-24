@@ -13,6 +13,7 @@ body {
 }
   .name.ng-valid {
     background: green;
+
   }
   .name.ng-dirty.ng-invalid-required {
       color: rgb(160, 78, 78);
@@ -63,6 +64,12 @@ body {
 }
 .prox-jg-container a i:hover {
   color: $amarelo;
+  transition:color 1s linear;
+  -webkit-transition:color 1s linear;
+  -moz-transition:color 1s linear;
+  -o-transition:color 1s linear;
+  -ms-transition:color 1s linear;
+
 }
 
 #sobre {
@@ -108,10 +115,13 @@ background-image: url(../images/ravenna.png);
   position: absolute;
   text-align: center;
   height: 100%;
-  background-color: #181212;
-  width: 100%;
-  opacity: 0;
 
+  background-color: $amarelo;
+
+  width: 0%;
+
+  opacity: 0;
+color:#fff;
   img {
     width: 40px;
     height: 40px;
@@ -120,7 +130,19 @@ background-image: url(../images/ravenna.png);
 
 }
 .portfolio-box:hover .hover-box-portfolio {
-  opacity: .9;
+   opacity: .9;
+  /* -webkit-transition: opacity 1s ease-in;
+  -o-transition: opacity 0.4s ease-in;
+  -ms-transition: opacity 0.4s ease-in;
+  -moz-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in; */
+width: 100%;
+  transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -webkit-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -moz-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -o-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+  -ms-transition: width 1s cubic-bezier(0.24, 1.32, 0.44, 1.46);
+
 
 }
 
@@ -130,7 +152,8 @@ background-image: url(../images/ravenna.png);
 
     .hover-box-portfolio a {
 
-       color: #fff;
+       color: #000;
+       font-weight: bolder;
     display: block;
     top: 50%;
     padding-top: 30%;
@@ -148,7 +171,8 @@ background-image: url(../images/ravenna.png);
 
     .hover-box-portfolio a {
 
-    color: #fff;
+       color: #000;
+       font-weight: bolder;
     display: block;
     top: 50%;
     padding-top: 20%;
@@ -156,8 +180,6 @@ background-image: url(../images/ravenna.png);
     text-decoration: none;
     font-family: "Dosis", sans-serif, verdana;
     font-size: 16px;
-
-
 
     }
 }
@@ -167,7 +189,8 @@ background-image: url(../images/ravenna.png);
     margin-bottom: 10px;
 
     .hover-box-portfolio  a{
-     color: #fff;
+       color: #000;
+       font-weight: bolder;
     display: block;
     top: 55%;
     padding-top: 15%;
@@ -175,6 +198,7 @@ background-image: url(../images/ravenna.png);
     text-decoration: none;
     font-family: "Dosis", sans-serif, verdana;
     font-size: 19px;
+
     }
 }
 
@@ -182,7 +206,7 @@ background-image: url(../images/ravenna.png);
 
 .portfolio-box:hover, .hover-box-portfolio:hover, .hover-box-portfolio img:hover{
   border:none;
-  border-radius: 9px;
+
 
 }
 #contato-form span{
