@@ -1006,3 +1006,17 @@ input:required, textarea:required {
 input:invalid, textarea:invalid {
   box-shadow: 0;
 }
+
+/* line 293, ../sass/styles.scss */
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  background-color: #3CB7BC;
+  color: #fff;
+  transition: background-color 1s linear;
+}
+
+/* line 299, ../sass/styles.scss */
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  background-color: #3CB7BC;
+  color: #fff;
+  transition: background-color 1s linear;
+}
