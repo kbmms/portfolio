@@ -8,11 +8,11 @@
 
 @mixin titulos-sections{
 font-size: 69px;
-  color: #fff;
+  color: $amarelo;
   font-family: dosis;
   font-weight: 300;
   padding: 10px;
-  background-color: #006E8E;
+  background-color: $cinza-escuro;
   box-shadow: 8px 6px 0px #13596E;
   -webkit-box-shadow: 8px 6px 0px #13596E;
   -moz-box-shadow: 8px 6px 0px #13596E;
