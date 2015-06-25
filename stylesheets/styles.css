@@ -715,10 +715,12 @@ body {
   margin: 0;
   font-size: 20px;
   background-color: #272727;
+  background-color: rgba(42, 56, 55, 0.65);
+  border: 1px solid #181717;
   border: 1px solid #181717;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .prox-jogo p:last-child {
   font-family: "Dosis";
   color: #F7F7F7;
@@ -727,20 +729,24 @@ body {
   text-shadow: 1px 1px 1px #000;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 .prox-jg-container {
   background-color: #474040;
+  background: url(../images/hdwall.jpg);
+  background-repeat: repeat;
+  background-size: 70%;
   padding-top: 21px;
   /*  padding-bottom: 21px; */
 }
 
-/* line 60, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .prox-jg-container a i {
   font-size: 39px;
   color: #272727;
+  color: #BE3F3F;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .prox-jg-container a i:hover {
   color: #FFCB00;
   transition: color 1s linear;
@@ -750,7 +756,7 @@ body {
   -ms-transition: color 1s linear;
 }
 
-/* line 78, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 #sobre span {
   font-size: 69px;
   color: #fff;
@@ -765,7 +771,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 #sobre p:last-child {
   color: #FFFFFF;
   padding: 10px;
@@ -774,18 +780,18 @@ body {
   font-family: "Dosis", verdana;
 }
 
-/* line 90, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .sobre-mim {
   background-color: #ffcb00;
 }
 
-/* line 93, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .portfolio {
   background-color: #F7EAEA;
   background-image: url(../images/ravenna.png);
 }
 
-/* line 98, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .portfolio p span {
   font-size: 69px;
   color: #fff;
@@ -800,7 +806,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 103, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .portfolio-box {
   height: 200px;
   padding-right: 0;
@@ -816,12 +822,12 @@ body {
   -o-box-shadow: 1px 1px 1px #999;
   -ms-box-shadow: 1px 1px 1px #999;
 }
-/* line 106, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .portfolio-box img {
   width: 100%;
   height: 200px;
 }
-/* line 113, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .portfolio-box .hover-box-portfolio {
   display: block;
   position: absolute;
@@ -833,13 +839,13 @@ body {
   color: #fff;
   border: 4px solid #2dd8b8;
 }
-/* line 123, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .portfolio-box .hover-box-portfolio img {
   width: 40px;
   height: 40px;
 }
 
-/* line 130, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 .portfolio-box:hover .hover-box-portfolio {
   opacity: .9;
   /* -webkit-transition: opacity 1s ease-in;
@@ -856,11 +862,11 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 148, ../sass/styles.scss */
+  /* line 153, ../sass/styles.scss */
   .portfolio-box {
     margin: 2%;
   }
-  /* line 151, ../sass/styles.scss */
+  /* line 156, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
     color: #000;
     font-weight: bolder;
@@ -874,11 +880,21 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 167, ../sass/styles.scss */
+  /* line 172, ../sass/styles.scss */
+  .prox-jg-container {
+    background-color: #474040;
+    background: url(../images/hdwall.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    padding-top: 21px;
+    /*  padding-bottom: 21px; */
+  }
+
+  /* line 181, ../sass/styles.scss */
   .portfolio-box {
     margin: 2%;
   }
-  /* line 170, ../sass/styles.scss */
+  /* line 184, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
     color: #000;
     font-weight: bolder;
@@ -892,11 +908,21 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 186, ../sass/styles.scss */
+  /* line 200, ../sass/styles.scss */
+  .prox-jg-container {
+    background-color: #474040;
+    background: url(../images/hdwall.jpg);
+    background-repeat: repeat;
+    background-size: 200%;
+    padding-top: 21px;
+    /*  padding-bottom: 21px; */
+  }
+
+  /* line 209, ../sass/styles.scss */
   .portfolio-box {
     margin-bottom: 10px;
   }
-  /* line 189, ../sass/styles.scss */
+  /* line 212, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
     color: #000;
     font-weight: bolder;
@@ -909,7 +935,7 @@ body {
     font-size: 19px;
   }
 }
-/* line 210, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 #contato-form span {
   font-size: 69px;
   color: #fff;
@@ -924,7 +950,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 213, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .contato-nome, .contato-email, .contato-mensagem {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -939,7 +965,7 @@ body {
   -o-box-shadow: 0px 0px 1px #615E5E;
   -ms-box-shadow: 0px 0px 1px #615E5E;
 }
-/* line 230, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
 .contato-nome input, .contato-email input, .contato-mensagem input {
   border: none;
   width: 80%;
@@ -951,7 +977,7 @@ body {
   font-size: 18px;
   padding-left: 7%;
 }
-/* line 243, ../sass/styles.scss */
+/* line 266, ../sass/styles.scss */
 .contato-nome textarea, .contato-email textarea, .contato-mensagem textarea {
   border: none;
   width: 80%;
@@ -965,29 +991,29 @@ body {
   resize: none;
 }
 
-/* line 256, ../sass/styles.scss */
+/* line 279, ../sass/styles.scss */
 .contato-nome input:focus, .contato-email input:focus, .contato-mensagem textarea:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
 }
 
-/* line 262, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .contato-mensagem textarea {
   height: 200px;
 }
 
-/* line 266, ../sass/styles.scss */
+/* line 289, ../sass/styles.scss */
 .contato-nome i, .contato-email i, .contato-mensagem i {
   font-size: 20px;
 }
 
-/* line 270, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .bt-enviar {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 274, ../sass/styles.scss */
+/* line 297, ../sass/styles.scss */
 .bt-enviar button {
   background-color: #006e8e;
   /* border: none; */
@@ -998,24 +1024,24 @@ body {
   border: 2px solid #545556;
 }
 
-/* line 284, ../sass/styles.scss */
+/* line 307, ../sass/styles.scss */
 input:required, textarea:required {
   box-shadow: none;
 }
 
-/* line 287, ../sass/styles.scss */
+/* line 310, ../sass/styles.scss */
 input:invalid, textarea:invalid {
   box-shadow: 0;
 }
 
-/* line 291, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   background-color: #3CB7BC;
   color: #fff;
   transition: background-color 1s linear;
 }
 
-/* line 297, ../sass/styles.scss */
+/* line 320, ../sass/styles.scss */
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
   background-color: #3CB7BC;
   color: #fff;

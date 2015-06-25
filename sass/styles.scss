@@ -42,6 +42,8 @@ body {
   margin: 0;
   font-size: 20px;
   background-color: #272727;
+    background-color: rgba(42, 56, 55, 0.65);
+  border: 1px solid #181717;
   border: 1px solid #181717;
 }
 .prox-jogo p:last-child{
@@ -54,13 +56,16 @@ body {
 .prox-jg-container {
 
   background-color: #474040;
+  background: url(../images/hdwall.jpg);
+  background-repeat: repeat;
+  background-size: 70%;
   padding-top: 21px;
 /*  padding-bottom: 21px; */
 }
 .prox-jg-container a i {
   font-size: 39px;
   color: $cinza-escuro;
-
+  color: #BE3F3F;
 }
 .prox-jg-container a i:hover {
   color: $amarelo;
@@ -164,6 +169,15 @@ width: 100%;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .prox-jg-container {
+
+  background-color: #474040;
+  background: url(../images/hdwall.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  padding-top: 21px;
+/*  padding-bottom: 21px; */
+}
   .portfolio-box {
     margin:2%;
 
@@ -183,6 +197,15 @@ width: 100%;
 }
 }
 @media screen and (max-width: 767px) {
+  .prox-jg-container {
+
+  background-color: #474040;
+  background: url(../images/hdwall.jpg);
+  background-repeat: repeat;
+  background-size: 200%;
+  padding-top: 21px;
+/*  padding-bottom: 21px; */
+}
   .portfolio-box {
     margin-bottom: 10px;
 
@@ -298,4 +321,7 @@ input:invalid, textarea:invalid {
   background-color:#3CB7BC;
   color: #fff;
   transition: background-color 1s linear;
+}
+.navbar-default {
+
 }
