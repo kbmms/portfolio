@@ -23,13 +23,13 @@ font-size: 69px;
 
 
 @mixin portfolio-box {
- height: 200px;
+height: 200px;
   padding-right: 0;
   padding-left: 0;
   border: 1px solid #000;
   background-color: #ed5353;
   text-align: center;
   overflow: hidden;
-  border:none;
+  border: 7px solid #FAFEFF;
 
 }
