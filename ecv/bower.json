@@ -1,0 +1,20 @@
+{
+  "name": "segredos-ninja",
+  "version": "0.0.0",
+  "authors": [
+    "Marcel <roxsublime@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "animate.css": "~3.4.0",
+    "materialize": "~0.97.1"
+  }
+}
