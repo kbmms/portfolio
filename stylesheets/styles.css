@@ -783,15 +783,17 @@ body {
 /* line 95, ../sass/styles.scss */
 .sobre-mim {
   background-color: #ffcb00;
+  padding: 100px 0;
 }
 
-/* line 98, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 .portfolio {
   background-color: #F7EAEA;
   background-image: url(../images/ravenna.png);
+  padding: 100px 0;
 }
 
-/* line 103, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 .portfolio p span {
   font-size: 69px;
   color: #FFCB00;
@@ -806,7 +808,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 108, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 .portfolio-box {
   height: 200px;
   padding-right: 0;
@@ -822,12 +824,12 @@ body {
   -o-box-shadow: 1px 1px 1px #999;
   -ms-box-shadow: 1px 1px 1px #999;
 }
-/* line 111, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .portfolio-box img {
   width: 100%;
   height: 200px;
 }
-/* line 118, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 .portfolio-box .hover-box-portfolio {
   display: block;
   position: absolute;
@@ -839,13 +841,13 @@ body {
   color: #fff;
   border: 4px solid #2dd8b8;
 }
-/* line 128, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .portfolio-box .hover-box-portfolio img {
   width: 40px;
   height: 40px;
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .portfolio-box:hover .hover-box-portfolio {
   opacity: .9;
   /* -webkit-transition: opacity 1s ease-in;
@@ -862,11 +864,11 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 153, ../sass/styles.scss */
+  /* line 155, ../sass/styles.scss */
   .portfolio-box {
     margin: 2%;
   }
-  /* line 156, ../sass/styles.scss */
+  /* line 158, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
     color: #000;
     font-weight: bolder;
@@ -880,7 +882,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 172, ../sass/styles.scss */
+  /* line 174, ../sass/styles.scss */
   .prox-jg-container {
     background-color: #474040;
     background: url(../images/hdwall.jpg);
@@ -890,11 +892,11 @@ body {
     /*  padding-bottom: 21px; */
   }
 
-  /* line 181, ../sass/styles.scss */
+  /* line 183, ../sass/styles.scss */
   .portfolio-box {
     margin: 2%;
   }
-  /* line 184, ../sass/styles.scss */
+  /* line 186, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
     color: #000;
     font-weight: bolder;
@@ -908,7 +910,7 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 200, ../sass/styles.scss */
+  /* line 202, ../sass/styles.scss */
   .prox-jg-container {
     background-color: #474040;
     background: url(../images/hdwall.jpg);
@@ -918,11 +920,11 @@ body {
     /*  padding-bottom: 21px; */
   }
 
-  /* line 209, ../sass/styles.scss */
+  /* line 211, ../sass/styles.scss */
   .portfolio-box {
     margin-bottom: 10px;
   }
-  /* line 212, ../sass/styles.scss */
+  /* line 214, ../sass/styles.scss */
   .portfolio-box .hover-box-portfolio a {
     color: #000;
     font-weight: bolder;
@@ -935,7 +937,7 @@ body {
     font-size: 19px;
   }
 }
-/* line 233, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 #contato-form span {
   font-size: 69px;
   color: #FFCB00;
@@ -950,7 +952,7 @@ body {
   -ms-box-shadow: 8px 6px 0px #13596E;
 }
 
-/* line 236, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 .contato-nome, .contato-email, .contato-mensagem {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -965,7 +967,7 @@ body {
   -o-box-shadow: 0px 0px 1px #615E5E;
   -ms-box-shadow: 0px 0px 1px #615E5E;
 }
-/* line 253, ../sass/styles.scss */
+/* line 255, ../sass/styles.scss */
 .contato-nome input, .contato-email input, .contato-mensagem input {
   border: none;
   width: 80%;
@@ -977,7 +979,7 @@ body {
   font-size: 18px;
   padding-left: 7%;
 }
-/* line 266, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 .contato-nome textarea, .contato-email textarea, .contato-mensagem textarea {
   border: none;
   width: 80%;
@@ -991,29 +993,34 @@ body {
   resize: none;
 }
 
-/* line 279, ../sass/styles.scss */
+/* line 281, ../sass/styles.scss */
+.contato {
+  padding: 100px 0;
+}
+
+/* line 284, ../sass/styles.scss */
 .contato-nome input:focus, .contato-email input:focus, .contato-mensagem textarea:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
 }
 
-/* line 285, ../sass/styles.scss */
+/* line 290, ../sass/styles.scss */
 .contato-mensagem textarea {
   height: 200px;
 }
 
-/* line 289, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 .contato-nome i, .contato-email i, .contato-mensagem i {
   font-size: 20px;
 }
 
-/* line 293, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 .bt-enviar {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 297, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 .bt-enviar button {
   background-color: #006e8e;
   /* border: none; */
@@ -1024,24 +1031,24 @@ body {
   border: 2px solid #545556;
 }
 
-/* line 307, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 input:required, textarea:required {
   box-shadow: none;
 }
 
-/* line 310, ../sass/styles.scss */
+/* line 315, ../sass/styles.scss */
 input:invalid, textarea:invalid {
   box-shadow: 0;
 }
 
-/* line 314, ../sass/styles.scss */
+/* line 319, ../sass/styles.scss */
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   background-color: #3CB7BC;
   color: #fff;
   transition: background-color 1s linear;
 }
 
-/* line 320, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
   background-color: #3CB7BC;
   color: #fff;
