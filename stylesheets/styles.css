@@ -940,6 +940,9 @@ border: 4px solid #000;
     text-transform: uppercase;
     font-family: 'Anton', sans-serif;
 }
+#contato-form p {
+  text-align: center;
+}
 
 /* line 238, ../sass/styles.scss */
 .contato-nome, .contato-email, .contato-mensagem {
