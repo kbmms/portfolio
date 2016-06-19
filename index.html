@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="App">
+<html lang="en" ng-app="meuPortfolio">
   <head>
     <meta charset="utf-8">
 
@@ -104,7 +104,7 @@
 
     <div class="container-fluid portfolio">
       <div class="container">
-        <div class="row" id="portfolio">
+        <div class="row" id="portfolio" ng-controller="ctrl">
           <p><span>Portfólio</span></p>
 
           <div class="col-md-3 col-sm-6  col-xs-6 col-xs-offset-3 portfolio-box">
@@ -218,6 +218,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
     <script type="text/javascript">
       angular.module('App', [])
         .controller('MainCtrl', [function(){
