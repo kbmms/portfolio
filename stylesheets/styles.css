@@ -942,6 +942,8 @@ border: 4px solid #000;
 }
 #contato-form p {
   text-align: center;
+  color: #fff;
+  font-weight: bolder;
 }
 
 /* line 238, ../sass/styles.scss */
