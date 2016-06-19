@@ -795,7 +795,8 @@ body {
 
 /* line 99, ../sass/styles.scss */
 .portfolio {
-  background-color: #1E1A1C;
+ background-image: url("http://www.contapraeu.com.br/wp-content/uploads/2015/11/produto_547c79b4477a9334791070a56cc00f08d67ac6053cea1aa0372cc5.jpg");
+background-size: cover;
   padding: 100px 0;
 }
 
