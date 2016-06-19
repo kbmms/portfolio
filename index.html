@@ -107,15 +107,16 @@
         <div class="row" id="portfolio">
           <p><span>Portfólio</span></p>
 
-          <div class="col-md-3 col-sm-6  col-xs-6 col-xs-offset-3 portfolio-box">
+          <div class="col-md-3 col-sm-6  col-xs-6 col-xs-offset-3 portfolio-box" ng-repeat="site in sites">
             <div class="hover-box-portfolio">
-              <a href="http://www.pwconstrucoes.com.br"  target="blank" ><img src="images/magnifying_glass.png" height="128" width="128" alt=""><br><span>PW CONSTRUÇÕES</span></a>
+              <a href="http://www.pwconstrucoes.com.br"  target="blank" ><img src="images/magnifying_glass.png" height="128" width="128" alt=""><br><span>{{site.nome}}</span></a>
 
             </div>
-            <img src="images/pw.png" height="652" width="1015" alt="">
+<!--            <img src="images/pw.png" height="652" width="1015" alt="">-->
 
           </div>          
 
+<!--
           <div class="col-md-3 col-sm-6  col-xs-6 col-xs-offset-3 portfolio-box">
             <div class="hover-box-portfolio">
               <a  href="http://www.suporteventos.com.br" target="blank" ><img src="images/magnifying_glass.png" height="128" width="128" alt=""><br><span>SUPORTE EVENTOS</span></a>
@@ -156,6 +157,7 @@
             </div>
             <img src="images/neo.jpg"  alt="Neo Itaigara Life">
           </div>          
+-->
 
 
         </div>
