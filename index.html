@@ -126,49 +126,9 @@
     <div class="container-fluid contato">
       <div class="container" id="contato">
         <div class="row" id="contato-form">
-          <p><span>Contato</span></p>
+          <p><span>Contatos</span></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eos quae est. Minima, fugit nam rerum accusamus harum, sed beatae quibusdam distinctio consequatur vitae itaque aspernatur, quod autem, asperiores in velit odit ab quos perferendis iste molestiae ratione dicta? Dolores incidunt aperiam nulla molestias nemo quod nam eos ex, harum blanditiis architecto repudiandae earum tempora laboriosam eum, vel odio. Accusantium quidem voluptate doloremque illum voluptatibus totam, adipisci minus ut, tempora officia nihil facilis fugiat maxime mollitia nostrum molestiae consectetur rem. Cupiditate odio, atque necessitatibus saepe. Dicta consequuntur repellat quis maxime iste ab. Neque suscipit, sapiente nihil cupiditate optio, eum ad?</p>
 
-          <form action="enviar.php" method="post" ng-submit="submit()" name="myForm">
-
-            <div class="col-md-8 col-md-offset-2 contato-nome">
-              <i title="Campo obrigatório" class="fa fa-exclamation-triangle icone-invalido" ng-show="myForm.uname.$invalid"></i>
-              <i title="Ok" class="fa fa-check-circle icone-valido" ng-show="myForm.uname.$valid"></i>
-              <i title="Mínimo 4 caracteres"class="fa fa-exclamation-triangle icone-min" ng-show="myForm.uname.$error.minlength"></i>
-              <input type="text"
-                     placeholder="NOME"
-                     required="required"
-                     name="uname"
-                     ng-model="ctrl.user.name"
-                     id="uname"
-                     ng-minlength="4">
-            </div>
-
-            <div class="col-md-8 col-md-offset-2 contato-email">
-              <i title="Campo obrigatório" class="fa fa-exclamation-triangle icone-invalido" ng-show="myForm.eml.$invalid"></i>
-              <i title="Ok" class="fa fa-check-circle icone-valido" ng-show="myForm.eml.$valid"></i>
-              <input type="email  "
-                     placeholder="EMAIL"
-                     id="eml"
-                     required="required"
-                     name="eml"
-                     ng-model="ctrl.user.email">
-            </div>
-
-            <div class="col-md-8 col-md-offset-2 contato-mensagem">
-              <i title="Campo obrigatório" class="fa fa-exclamation-triangle icone-invalido" ng-show="myForm.msg.$invalid"></i>
-              <i title="Ok" class="fa fa-check-circle icone-valido" ng-show="myForm.msg.$valid"></i>
-              <i title="Mínimo 10 caracteres"class="fa fa-exclamation-triangle icone-min" ng-show="myForm.msg.$error.minlength"></i>
-              <textarea type="text"
-                        placeholder="MENSAGEM"
-                        id="msg"
-                        required="required"
-                        ng-model="ctrl.user.mensagem"
-                        name="msg"
-                        ng-minlength="10">
-              </textarea>
-            </div>
-            <div class="col-md-8 col-md-offset-2 bt-enviar text-center"><button type="submit" ng-disabled="myForm.$invalid">Enviar</button></div>
-          </form>
         </div>
       </div>
     </div>
@@ -180,15 +140,6 @@
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/angular.min.js"></script>
     <script src="javascripts/app.js"></script>
-    <script type="text/javascript">
-      angular.module('App', [])
-        .controller('MainCtrl', [function(){
-          var self = this;
-          self.submit = function() {
-            console.log('User click', self.user);
-          };
-        }]);
-    </script>
     <script>
       function scrollNav2() {
         $('.ir-sobre-scroll , .ir-portfolio-scroll , .ir-contato-scroll').click(function(){
