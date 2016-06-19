@@ -782,8 +782,9 @@ body {
 
 /* line 95, ../sass/styles.scss */
 .sobre-mim {
-  background-color: #ffcb00;
-  padding: 100px 0;
+  background-color: #3A3737;
+  padding: 100px 0px;
+  border-top: 6px solid #BE3F3F;
 }
 
 /* line 99, ../sass/styles.scss */
