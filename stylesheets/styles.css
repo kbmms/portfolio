@@ -792,18 +792,18 @@ body {
 }
 
 /* line 105, ../sass/styles.scss */
+.portfolio p {
+  text-align: center;
+}
 .portfolio p span {
-  font-size: 69px;
-  color: #FFCB00;
-  font-family: dosis;
-  font-weight: 300;
-  padding: 10px;
-  background-color: #272727;
-  box-shadow: 8px 6px 0px #13596E;
-  -webkit-box-shadow: 8px 6px 0px #13596E;
-  -moz-box-shadow: 8px 6px 0px #13596E;
-  -o-box-shadow: 8px 6px 0px #13596E;
-  -ms-box-shadow: 8px 6px 0px #13596E;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 29px;
+    color: #F53061;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
 }
 
 /* line 110, ../sass/styles.scss */
