@@ -790,6 +790,8 @@ body {
 .portfolio {
   background-color: #1E1A1C;
   padding: 100px 0;
+  background-image: url(../images/Black-Texture-Background.jpg);
+  background-size: cover;
   border-top: 6px solid #BE3F3F;
 }
 
@@ -800,7 +802,7 @@ body {
 .portfolio p span {
     margin: 0 auto;
     text-align: center;
-    font-size: 29px;
+    font-size: 69px;
     color: #F53061;
     text-shadow: 1px 1px 1px #000;
     font-weight: lighter;
