@@ -1,0 +1,64 @@
+/*FONTS*/
+@font-face {
+    font-family: 'matizregular';
+    src: url('../fonts/Matiz-webfont.eot');
+    src: url('../fonts/Matiz-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Matiz-webfont.woff') format('woff'),
+         url('../fonts/Matiz-webfont.ttf') format('truetype'),
+         url('../fonts/Matiz-webfont.svg#matizregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    background-color: #F6F5F2;
+}
+.container-topo {
+    background-color: #FF6138;
+    border-bottom: 3px solid #FFF;
+}
+.container-topo h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: bolder;
+    font-family: matizregular;
+}
+.card-one {
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+    margin: 1px 0;
+}
+.card-one h1, .card-one h2 {
+    font-size: 14px;
+    margin: 0;
+    line-height: 17px;
+    color: #FF6138;
+    font-weight: bold;
+
+    }
+.titulo-sections h4 {
+    color: #999;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+/*@media (min-width: 992px){
+    .card-one.col-md-6{
+        width: 49%;
+        margin-left: 0.5%;
+    }
+}
+@media (min-width: 768px){
+    .card-one.col-sm-6 {
+        width:49%;
+        margin-left: 0.5%;
+    }
+}*/
+.escudo-destaques img {
+    width: 20px;
+
+}

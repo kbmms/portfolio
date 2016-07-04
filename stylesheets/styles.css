@@ -1066,9 +1066,26 @@ input:invalid, textarea:invalid {
   text-shadow: 1px 1px 1px #000;
 }
 .rodape {
-  background: #000;
+  background: #1E1E20;
 }
 .rodape p {
   margin: 10px 0;
   color: #fff;
+}
+.servicos {
+  background: #000;
+}
+.servicos i {
+  color: #fff;
+  padding: 30px 10px;
+  font-size:40px;
+}
+.servicos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.servicos li {
+  display: inline-block;
 }
