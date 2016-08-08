@@ -770,16 +770,14 @@ body {
 /* line 86, ../sass/styles.scss */
 #sobre p {
     text-align: center;
-    color: #fff;
-    font-weight: bold;
+    color: #999;
     font-family: 'PT Sans', sans-serif;
-    text-shadow: 1px 1px 1px #000;
     font-size: 19px;
 }
 
 /* line 95, ../sass/styles.scss */
 .sobre-mim {
-  background-color: #3A3737;
+  background-color: #fff;
   padding: 100px 0px;
 /*  border-top: 6px solid #BE3F3F;*/
 }
@@ -876,8 +874,7 @@ border: 2px solid #181818;
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /* line 174, ../sass/styles.scss */
   .prox-jg-container {
-    background-color: #474040;
-    background: url(../images/hdwall.jpg);
+background-color: #31AF92;
     background-repeat: repeat;
     background-size: 100%;
     padding-top: 21px;
@@ -904,8 +901,7 @@ border: 2px solid #181818;
 @media screen and (max-width: 767px) {
   /* line 202, ../sass/styles.scss */
   .prox-jg-container {
-    background-color: #474040;
-    background: url(../images/hdwall.jpg);
+background-color: #31AF92;
     background-repeat: repeat;
     background-size: 200%;
     padding-top: 21px;
@@ -1065,13 +1061,29 @@ input:invalid, textarea:invalid {
   text-shadow: 1px 1px 1px #000;
 }
 .rodape {
-  background: #1E1E20;
+  background: #000;
 }
 .rodape p {
   margin: 10px 0;
   color: #fff;
+
 }
-.servicos {
+.lista-skills ul{
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.lista-skills li {
+  display: inline-block;
+  color: #fff;
+  font-size: 38px;
+  padding: 12px 3px;
+}
+.box-skills {
+  background-color: #226354;
+}
+/*.servicos {
   background: #303030;
   padding: 40px 0;
 }
@@ -1109,4 +1121,4 @@ text-align: left;
 padding: 42px 0px;
 text-transform: uppercase;
 font-weight: bolder;
-}
+}*/
