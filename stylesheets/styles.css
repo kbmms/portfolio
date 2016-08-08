@@ -714,10 +714,10 @@ body {
   color: #fff;
   margin: 0;
   font-size: 20px;
-  background-color: #272727;
+/*  background-color: #272727;
   background-color: rgba(42, 56, 55, 0.65);
   border: 1px solid #181717;
-  border: 1px solid #181717;
+  border: 1px solid #181717;*/
 }
 
 /* line 49, ../sass/styles.scss */
@@ -731,8 +731,8 @@ body {
 
 /* line 56, ../sass/styles.scss */
 .prox-jg-container {
-  background-color: #474040;
-  background: url(../images/hdwall.jpg);
+  background-color: #31AF92;
+  /*background: url(../images/hdwall.jpg);*/
   background-repeat: repeat;
   background-size: 70%;
   padding-top: 21px;
@@ -742,8 +742,7 @@ body {
 /* line 65, ../sass/styles.scss */
 .prox-jg-container a i {
   font-size: 39px;
-  color: #272727;
-  color: #BE3F3F;
+  color: #fff;
 }
 
 /* line 70, ../sass/styles.scss */
@@ -782,7 +781,7 @@ body {
 .sobre-mim {
   background-color: #3A3737;
   padding: 100px 0px;
-  border-top: 6px solid #BE3F3F;
+/*  border-top: 6px solid #BE3F3F;*/
 }
 
 
@@ -1073,7 +1072,8 @@ input:invalid, textarea:invalid {
   color: #fff;
 }
 .servicos {
-  background: #000;
+  background: #303030;
+  padding: 40px 0;
 }
 .servicos i {
   color: #fff;
@@ -1088,4 +1088,25 @@ input:invalid, textarea:invalid {
 }
 .servicos li {
   display: inline-block;
+}
+.card-servicos{
+  border-bottom: 4px solid #871818;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.38);
+margin-top: 19px;
+margin-bottom: 19px;
+border-radius: 3px;
+}
+.card-servicos i {
+  color: #232323;
+padding: 30px 10px;
+font-size: 174px;
+}
+
+.card-servicos h4 {
+  font-size: 13px;
+color: #151413;
+text-align: left;
+padding: 42px 0px;
+text-transform: uppercase;
+font-weight: bolder;
 }
