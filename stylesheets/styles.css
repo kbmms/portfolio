@@ -760,7 +760,7 @@ body {
     margin: 0 auto;
     text-align: center;
     font-size: 29px;
-    color: #F53061;
+    color: #FFFFFF;
     text-shadow: 1px 1px 1px #000;
     font-weight: lighter;
     text-transform: uppercase;
@@ -770,14 +770,14 @@ body {
 /* line 86, ../sass/styles.scss */
 #sobre p {
     text-align: center;
-    color: #999;
+    color: #226354;
     font-family: 'PT Sans', sans-serif;
     font-size: 19px;
 }
 
 /* line 95, ../sass/styles.scss */
 .sobre-mim {
-  background-color: #fff;
+  background-color: #293A36;
   padding: 100px 0px;
 /*  border-top: 6px solid #BE3F3F;*/
 }
