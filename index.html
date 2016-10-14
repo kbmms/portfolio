@@ -165,10 +165,6 @@
         <div class="row" id="portfolio">
           <p><span>Portfólio</span></p>
           <div class="col-md-3 col-sm-6  col-xs-6 col-xs-offset-3 portfolio-box" ng-repeat="site in sites">
-            <div class="hover-box-portfolio">
-              <a href="{{site.url}}"  target="blank" ><img src="images/magnifying_glass.png" height="128" width="128" alt=""><br><span>{{site.nome}}</span></a>
-
-            </div>
             <img ng-src="{{site.thumbnail}}" height="652" width="1015" alt="{{site.nome}}">
           </div>
         </div>
