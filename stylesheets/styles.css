@@ -767,6 +767,8 @@ body {
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     font-size: 19px;
+    padding: 15px;
+    margin: 10px;
 }
 
 /* line 95, ../sass/styles.scss */
