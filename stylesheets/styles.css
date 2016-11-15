@@ -604,17 +604,17 @@ th {
 
 /* line 10, ../sass/partials/_nav.scss */
 .navbar-default {
-  border-color: #fff;
-  padding: 23px;
-  margin: 0;
-  background-color: #fff;
+    border-color: #313836;
+    padding: 23px;
+    margin: 0;
+    background-color: #3B4E49;
 }
 
 /* line 19, ../sass/partials/_nav.scss */
 .navbar-default .navbar-brand {
   font-family: "Dosis", sans-serif;
-  color: #006E8E;
-  font-size: 25px;
+  color: #fff;
+  font-size: 19px;
   text-transform: uppercase;
 }
 
@@ -725,12 +725,12 @@ body {
 
 /* line 56, ../sass/styles.scss */
 .prox-jg-container {
-  background-color: #31AF92;
+  background-color: #313836;
   /*background: url(../images/hdwall.jpg);*/
   background-repeat: repeat;
   background-size: 70%;
-  padding-top: 21px;
-  /*  padding-bottom: 21px; */
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 /* line 65, ../sass/styles.scss */
@@ -764,14 +764,14 @@ body {
 /* line 86, ../sass/styles.scss */
 #sobre p {
     text-align: center;
-    color: #226354;
+    color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     font-size: 19px;
 }
 
 /* line 95, ../sass/styles.scss */
 .sobre-mim {
-  background-color: #293A36;
+background-color: #226354;
   padding: 100px 0px;
 /*  border-top: 6px solid #BE3F3F;*/
 }
@@ -779,9 +779,9 @@ body {
 
 /* line 99, ../sass/styles.scss */
 .portfolio {
-  background-color: #000;
+background-color: #313836;
   padding: 40px 0;
-  border-top: 6px solid #BE3F3F;
+
 }
 
 /* line 105, ../sass/styles.scss */
@@ -986,7 +986,7 @@ background-color: #31AF92;
 /* line 281, ../sass/styles.scss */
 .contato {
   padding: 40px 0;
-  border-top: 6px solid #BE3F3F;
+background: #226354;
 }
 
 /* line 284, ../sass/styles.scss */
