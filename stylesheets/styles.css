@@ -1125,3 +1125,13 @@ padding: 42px 0px;
 text-transform: uppercase;
 font-weight: bolder;
 }*/
+
+.hoverefects {
+  display: none;
+}
+
+/*.portfolio-box:hover .hoverefects {
+  display: inherit;
+  transition: 1s ease;
+}
+*/

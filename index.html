@@ -164,10 +164,20 @@
       <div class="container">
         <div class="row" id="portfolio">
           <p><span>Portfólio</span></p>
+
+
           <div class="col-md-3 col-sm-6  col-xs-6 col-xs-offset-3 portfolio-box" ng-repeat="site in sites">
+          <a href="{{site.url}}" target="_blank">
+          <div class="hoverefects">
+           <img src="{{site.thumbnail}}" alt="">
+          </div>
+
           <!--   <img ng-src="{{site.thumbnail}}" height="652" width="1015" alt="{{site.nome}}"> -->
             <p><span>{{site.nome}}</span></p>
+              </a>
           </div>
+
+
         </div>
       </div>
      </div>
