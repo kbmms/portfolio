@@ -1,4 +1,7 @@
-{"sites":[{"nome":"Suporte Eventos", "Linguagem":"PHP", "thumbnail":"images/sp.png", "url":"http://www.suporteventos.com.br"},
+{"sites":[{"nome":"Estoque Tudo", "Linguagem":"PHP", "thumbnail":"images/logo-estoque_02.png", "url":"http://www.estoquetudo.com.br"},
+{"nome":"PW Construções", "Linguagem":"PHP", "thumbnail":"images/pw.png", "url":"http://www.pwconstrucoes.com.br"},
+{"nome":"Neo Itaigara Life", "Linguagem":"PHP", "thumbnail":"images/neo.jpg", "url":"http://www.neoitaigaralife.com.br"},
 {"nome": "Criar e Editar", "Linguagem":"HTML e CSS", "thumbnail":"images/bg_home_mobile.jpg", "url":"http://www.criaronline.com"},
-{"nome":"Neo Itaigara Life", "Linguagem":"PHP", "thumbnail":"images/neo.png", "url":"http://www.neoitaigaralife.com.br"},
-{"nome":"PW Construções", "Linguagem":"PHP", "thumbnail":"images/pw-logo-mobile.png", "url":"http://www.pwconstrucoes.com.br"}]}
+{"nome":"Suporte Eventos", "Linguagem":"PHP", "thumbnail":"images/suporte.jpg", "url":"http://www.suporteventos.com.br"},
+{"nome":"Lena Brasil", "Linguagem":"PHP", "thumbnail":"images/lena.png", "url":"http://www.lenabrasil.com.br"}
+]}
