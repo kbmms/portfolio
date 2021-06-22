@@ -1,5 +1,7 @@
-{"sites":[{"nome":"Estoque Tudo", "Linguagem":"PHP", "thumbnail":"images/logo-estoque_02.png", "url":"http://www.estoquetudo.com.br"},
-    {"nome":"Kinvo", "Linguagem":"HTML", "thumbnail":"images/kinvo.jpg", "url":"https://kbmms.github.io/portfolio/kinvo/"},
+{"sites":[
+    {"nome":"Meu deezer App", "Linguagem":"ReactJS", "thumbnail":"images/deezer.png", "url":"https://meudeezer.vercel.app/"},
+{"nome":"Estoque Tudo", "Linguagem":"PHP", "thumbnail":"images/logo-estoque_02.png", "url":"http://www.estoquetudo.com.br"},
+{"nome":"Kinvo", "Linguagem":"HTML", "thumbnail":"images/kinvo.jpg", "url":"https://kbmms.github.io/portfolio/kinvo/"},
 {"nome":"PW Construções", "Linguagem":"PHP", "thumbnail":"images/pw.png", "url":"http://www.pwconstrucoes.com.br"},
 {"nome": "Criar e Editar", "Linguagem":"HTML e CSS", "thumbnail":"images/bg_home_mobile.jpg", "url":"http://www.criaronline.com"},
 {"nome": "Lage Construtora", "Linguagem":"HTML e CSS", "thumbnail":"images/lage.png", "url":"http://lageconstrutora.com.br/"},
