@@ -755,10 +755,10 @@ body {
     text-align: center;
     font-size: 29px;
     color: #FFFFFF;
-    text-shadow: 1px 1px 1px #000;
+    /* text-shadow: 1px 1px 1px #000;
     font-weight: lighter;
+    font-family: 'Anton', sans-serif; */
     text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
 }
 
 /* line 86, ../sass/styles.scss */
@@ -773,7 +773,7 @@ body {
 
 /* line 95, ../sass/styles.scss */
 .sobre-mim {
-background-color: #226354;
+background-color: #3b3f3e;
   padding: 100px 0px;
 /*  border-top: 6px solid #BE3F3F;*/
 }
@@ -1012,7 +1012,7 @@ background-color: #31AF92;
 /* line 281, ../sass/styles.scss */
 .contato {
   padding: 40px 0;
-background: #226354;
+background: #3b3f3e;
 }
 
 /* line 284, ../sass/styles.scss */
@@ -1080,9 +1080,9 @@ input:invalid, textarea:invalid {
   display: inline-block;
 }
 #contato-form i {
-  font-size: 70px;
+  font-size: 24px;
   margin: 0 13px;
-  color: #F53061;
+  color: #bfdcd4;
   text-shadow: 1px 1px 1px #000;
 }
 .rodape {
