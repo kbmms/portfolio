@@ -810,7 +810,7 @@ background-color: #313836;
     text-align: center;
     height: 160px;
     overflow: hidden;
-    background: #434645;
+    /* background: #434645; */
     border-radius: 2px;
     /* border: 1px solid #333131;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.44); */
