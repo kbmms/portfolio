@@ -1,191 +1,528 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="meuPortfolio">
-  <head>
-    <meta charset="utf-8">
-
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Marcel Santos / Frontend" />
-    <meta property="og:url" content="http://www.marcelsantos.com.br" />
-    <meta property="og:site_name" content="Marcel Santos - Desenvolvedor Front End" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfólio para aprensentação dos meus trabalhos como frontend">
-    <meta name="keywords" content="Desenvolvedor frontend, Marcel Santos, Front end Salvador BA, Marcel Santos Desenvolvedor FrontEnd ">
-    <meta name="author" content="Marcel Santos">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Marcel Santos - Desenvolvedor FrontEnd</title>
-
-    <!-- Bootstrap -->
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-54926339-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </head>
-  <body ng-controller="ctrl">
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://kbmms.github.io/portfolio/">Marcel Santos</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class=""><a href="#sobre" class="ir-contato-scroll">Sobre <span class="sr-only">(current)</span></a></li>
-            <li><a href="#portfolio" class="ir-portfolio-scroll">Portfólio</a></li>
-            <li><a href="#contato" class="ir-contato-scroll">Contato</a></li>
-<!--            <li><a href="http://www.marcelsantos.com.br/blog" target="_blank" class="ir-contato-scroll">Blog</a></li>-->
-            <!-- <li><a href="#">Blog</a></li> -->
-
-          </ul>
-
-
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-
-
-
-    <div id="container-principal" class="container-fluid prox-jg-container">
-      <div class="container">
-        <div class="row text-center prox-jogo">
-          <p>
-            <img src="images/eu.png"  alt=""></p>
-          <p>DESENVOLVEDOR FRONTEND</p>
-
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              <a href="https://www.facebook.com/marcel.santos.14" target="_blank"><i class="fa fa-facebook-official"></i></a>
-              <a href="https://plus.google.com/104276119476686715857/posts" target="_blank"><i class="fa fa-google-plus-square"></i></a>
-              <a href="https://www.linkedin.com/in/marcel-santos-67298580/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container-fluid sobre-mim">
-      <div class="container">
-        <div class="row" id="sobre">
-          <p><span>Oi, saiba um pouco mais sobre mim.</span></p>
-          <p>
-            Bem vindo ao meu portfólio digital, meu nome é Marcel Santos e sou desenvolvedor frontend. <br> Tenho 32 anos e moro em Salvador-BA. Sou apaixonado por tecnologias e estou sempre acompanhando as evoluções e as melhores técnicas para o desenvolvimento web. <br> Possuo conhecimentos em React, AngularJs, HTML, CSS, JavaScript, Tailwind, Bootstrap entre outros.
-            Através do meu portfólio você verá alguns trabalhos feitos por mim. See You!
-          </p>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid portfolio">
-     <div class="layer">
-      <div class="container">
-        <div class="row" id="portfolio">
-          <p><span>Portfólio</span></p>
-
-
-          <div class="col-md-3 col-sm-6  col-xs-6 col-xs-offset-3 portfolio-box" ng-repeat="site in sites">
-          <a href="{{site.url}}" target="_blank">
-            <div class="hoverefects">
-             <img src="{{site.thumbnail}}" alt="">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/hero.jpg" alt="">
+                </div>
             </div>
-            <!-- <p><span>{{site.nome}}</span></p>
-            <p class="linguagem"><span>{{site.Linguagem}}</span></p> -->
-         <!--  <a href="{{site.url}}" target="_blank"> -->
-              <img src="{{site.thumbnail}}" alt="">
-
-          <!--   <img ng-src="{{site.thumbnail}}" height="652" width="1015" alt="{{site.nome}}"> -->
-
-              <!--  -->
-              </a>
-          </div>
-
-
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Marcel Santos.</span>
+                    A Front-end Developer.
+                </h1>
+                <p>
+                    I'm a Front-end Developer, I love to create beautiful and functional websites.
+                    With experience in creating responsive and intuitive interfaces. Proficient in React, Next,TypeScript, and Javascript.
+                </p>
+                <div class="btn-con"  >
+                    <a href="marcel-curriculo.pdf" target="_blank" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-     </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        Front-end developer with experience in creating responsive and intuitive interfaces. Proficient in React, Next, TypeScript, and Javascript.
+                    </p>
+                    <div class="btn-con">
+                        <a href="marcel-curriculo.pdf" target="_blank"  class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">15+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">7+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">100%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NextJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Bootstrap</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Tailwind</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">React Native</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">TypeScript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2021 - 2023</p>
+                    <h5>Front-end<span> - Ateliê de Propaganda</span></h5>
+                    <p>
+                        Developing from Figma to Next.js or React.js, ensuring a responsive design for a seamless user experience, handling validations, and ensuring the overall functionality of the system
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2020 - 2021</p>
+                    <h5>Front-end<span> - Freelancer.</span></h5>
+                    <p>
+                        Developing from Photoshop to React.js, Next, Wordpress, including all API integrations, ensuring a responsive design for a seamless user experience, handling validations, and ensuring the overall functionality of the system.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2016 - 2017</p>
+                    <h5>Front-end<span> - Abrasivo Digital</span></h5>
+                    <p>
+                        Developing from scratch to wordpress, using some plugins to help development.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2013 - 2014</p>
+                    <h5>Front-end<span> - Everest TI</span></h5>
+                    <p>
+                        Developing from Figma to React.js, including all API integrations, ensuring a responsive design for a seamless user experience, handling validations, and ensuring the overall functionality of the system.  
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2012 - 2013</p>
+                    <h5>Front-end<span> - Versite</span></h5>
+                    <p>
+                        Developing from scratch to wordpress or static website using html, css and js/jquery, using some plugins to help development.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port1.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>NextJS</h3>
+                        <div class="icons">
+                            <a href="https://ateliedepropaganda.com.br/" target="_blank" class="icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>HTML, CSS, JS</h3>
+                        <div class="icons">
+                            <a href="https://estoquetudo.com.br/" target="_blank" class="icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Bolão TVAlviverde - ReactJS</h3>
+                        <div class="icons">
+                            <a href="https://bolao.tvalviverde.com.br" target="_blank" class="icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
 
-    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port4.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Catálogo Lenovo - ReactJS</h3>
+                        <div class="icons">
+                            <a href="https://catalogolenovo.com.br" target="_blank" class="icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port5.png" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>SAMA - ReactJS</h3>
+                        <div class="icons">
+                            <a href="http://kbmms.github.io/portfolio/img/print_site_sama.png" target="_blank" class="icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
 
-    <div class="container-fluid contato">
-      <div class="container" id="contato">
-        <div class="row text-center" id="contato-form">
-        <p>roxsublime@gmail.com</p>
-         <ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port6.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Pellegrino - ReactJS</h3>
+                        <div class="icons">
+                            <a href="http://kbmms.github.io/portfolio/img/print_pellegrino.png" target="_blank" class="icon">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port7.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : London, united Kingdom
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: maclinzuniversal@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: Sussex University, East Sussex</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 07522670617</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: Afrikaans, English, Spanish</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="#" class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-             <li>
-               <a href="https://www.facebook.com/marcel.santos.14" target="_blank">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-               </a>
-             </li>
-             <li>
-              <a href="https://twitter.com/Marrcell" target="_blank">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-              </a>
-             </li>
-             <li>
-              <a href="https://github.com/kbmms" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-             </a>
-             </li>
-         </ul>
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
         </div>
-      </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <!-- <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div> -->
     </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
 
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="javascripts/jquery-1.11.3.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="javascripts/bootstrap.min.js"></script>
-    <script src="javascripts/angular.min.js"></script>
-    <script src="javascripts/app.js"></script>
-    <script>
-      function scrollNav2() {
-        $('.ir-sobre-scroll , .ir-portfolio-scroll , .ir-contato-scroll').click(function(){
-          $('html, body').stop().animate({
-            scrollTop: $( $(this).attr('href') ).offset().top - 0
-          }, 1200);
-          return false;
-        });
-        $('.navbar-collapse a').scrollTop();
-      }
-      scrollNav2();
-    </script>
-    <!-- Load ScrollTo -->
-    <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
-
-    <!-- Load LocalScroll -->
-    <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
-
-  </body>
+</body>
 </html>

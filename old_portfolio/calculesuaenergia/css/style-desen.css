@@ -1,0 +1,46 @@
+body {
+    background: #2F2A2A none repeat scroll 0% 0%;
+}
+h1 {
+    color: #fff;
+    font-size: 44px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    text-transform: uppercase;
+}
+input[type="date"], input[type="datetime-local"], input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], textarea.materialize-textarea {
+    background-color: transparent;
+    border-width: medium medium 1px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color #9E9E9E;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-radius: 0px;
+    outline: 0px none;
+    height: 3rem;
+    width: 100%;
+    font-size: 0.69rem;
+    margin: 0px 0px 15px;
+    padding: 0px;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+}
+.valor-app p span {
+    color: #0F8407;
+    font-weight: bold;
+    font-size: 1em;
+}
+.card .card-content .card-title, .tabs .tab, .toast {
+    line-height: 22px;
+}
+.valor-app span {
+ color: #ed5353;   
+}
+.blue-grey.darken-1 {
+    background-color: #1F2021 !important;
+}
